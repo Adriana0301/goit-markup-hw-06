@@ -318,8 +318,10 @@ button:hover, button:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: inline-block;
+    display: flex;
     margin-bottom: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer .footer-container .footerlogo .logotext {
@@ -345,6 +347,8 @@ button:hover, button:focus {
 
 .footer-list-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 72px;
     flex-wrap: wrap;
 }
@@ -404,7 +408,7 @@ textarea,
 .form-container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .form {
@@ -868,7 +872,31 @@ fieldset {
     .portfolioitems {
         width: calc((100% - 24px) / 2);}
 
-}
+    .footer-text-sm {
+        text-align: left;
+    }
+    
+    .footer .container {
+        width: 736px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    .footer-list-container {
+        gap: 24px, 72px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .form-container {
+        margin-right: 108px;
+    }
+
 
 
 @media screen and (min-width:1158px) {
@@ -956,18 +984,30 @@ fieldset {
     }
 
     .wrap-footer {
-    margin-right: 80px;
-    display: flex;
-    flex-direction: column;
-    }
-
-    .footer-list-container {
-        flex-wrap: nowrap;
-        gap: none;
+        margin-right: 80px;
+        display: flex;
+        flex-direction: column;
     }
 
     .form {
         flex-wrap: nowrap;
     }
     
+    .footer-container {
+        min-width: 258px;
+    }
+
+    .footer .container {
+        width: 1158px;
+    }
+
+    .footer-list-container {
+        gap: 0;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }

@@ -117,7 +117,7 @@ nav .logo .logotext {
         min-width: 24px;
         height: 24px;
         border-radius: 100%;
-        background-color: #e7e9fc;
+        background-color: transparent;
         border: 1px solid #2e2f42;
         display: flex;
         align-items: center;
@@ -152,14 +152,11 @@ nav .logo .logotext {
     color: #404bbf;
   }
 
-  .modal-contactadrs {
-    margin-bottom: 48px;
-}
-
 .modal-header-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 48px;
 }
 
 .modal-link {
@@ -246,6 +243,11 @@ nav .logo .logotext {
     background-size: cover;
 }
 
+@media (min-resolution: 192dpi) {
+    .box {
+      background-image: url('people-office2x.jpg');
+    }
+  }
 .mainheader {
     font-weight: 700;
     /* font-size: 56px;
@@ -356,7 +358,7 @@ button:hover, button:focus {
 
 .portfolio-list {
     display: flex;
-    gap: 48px 24px;
+    gap: 48px;
     flex-wrap: wrap;
 }
 
@@ -943,11 +945,15 @@ fieldset {
     }
 
     .team-list {
-        gap: 24px;
+        gap: 64px 24px;
     }
     
     .portfolioitems {
         width: calc((100% - 24px) / 2);}
+
+    .portfolio-list {
+        gap:72px 24px;
+    }
 
     .footer-text-sm {
         text-align: left;
@@ -1137,7 +1143,11 @@ fieldset {
         width: calc((100% - 48px) / 3);
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
-    
+
+    .portfolio-list {
+        gap: 48px 24px;
+    }
+
     .class {
         position: relative;
         overflow: hidden;

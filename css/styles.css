@@ -135,7 +135,6 @@ nav .logo .logotext {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 168px;
   }
 
   .modal-but {
@@ -146,6 +145,10 @@ nav .logo .logotext {
     letter-spacing: 0.02em;
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-but-current {
+    color: #404bbf;
   }
 
   .modal-but:hover,  .modal-but:focus {
@@ -169,9 +172,9 @@ nav .logo .logotext {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-contactadrs{
-    font-style: normal;
-}
+.modal-link-current {
+    color: #4d5ae5;
+  }
 
 .modal-link:hover, .modal-link:focus {
     color: #4d5ae5;
@@ -216,7 +219,14 @@ nav .logo .logotext {
     fill: #fff;
 }
   
+.modal-header-navigation {
+    margin-bottom: auto;
+}
 
+.modal-address {
+    font-style: normal;
+
+}
 /*------------------*/
 
 /*---------HERO---------*/
@@ -242,7 +252,7 @@ nav .logo .logotext {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .box {
-      background-image: url('Dark-bg-mb2x.jpg');
+      background-image: url('Dark-bg-mb@2x.jpg');
     }
   }
 
@@ -511,7 +521,8 @@ textarea,
     line-height: 2;
     letter-spacing: 0.04em; 
     padding-left: 16px;
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     padding-left: 16px; 
     padding-right: 17px;
@@ -917,6 +928,11 @@ fieldset {
     line-height: 1.17;
     letter-spacing: 0.04em;
     }
+
+    .footer .container {
+        width: 736px;
+        padding-left: 108px;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -964,18 +980,17 @@ fieldset {
     .footer-container {
         display: flex;
         align-items: flex-start;
-        justify-content: left;
         flex-direction: column;
     }
 
     .footer-list-container {
-        gap: 24px, 72px;
-        justify-content: center;
-        align-items: flex-start;
+        gap: 72px 24px;
+        align-items: center;
+        justify-content: flex-start;
+
     }
 
     .form-container {
-        margin-right: 108px;
     }
     
     .header-list-nav {
@@ -1081,7 +1096,7 @@ fieldset {
 
     @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .box {
-      background-image: url('Dark-bg-tab2x.jpg');
+      background-image: url('Dark-bg-tab@2x.jpg');
     }
   }
 
@@ -1096,6 +1111,9 @@ fieldset {
     min-height: 584px; 
     padding: 72px 24px 24px;
 }
+
+.form-input {
+    width: 264px;
 }
 
 @media screen and (min-width:1158px) {
